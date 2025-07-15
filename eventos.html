@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/eventos.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <title>Calendário PET Fronteira</title>
+</head>
+
+<body class="bg-light">
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/logo_pet.png" alt="Logo PET" width="40" height="40" class="mr-2">
+          <span>PET Fronteira</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-custom" href="index.html">Início</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav-custom" href="#" id="navbarDropdown" data-bs-toggle="dropdown">
+                Projetos
+              </a>
+              <ul class="dropdown-menu custom-dropdown" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="projetos23.html">Projetos 2023</a></li>
+                <li><a class="dropdown-item" href="projetos24.html">Projetos 2024</a></li>
+                <li><a class="dropdown-item" href="projetos25.html">Projetos 2025</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="todos-projetos.html">Todos os Projetos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-custom" href="editais.html">Editais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-custom" href="eventos.html">Eventos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+<main class="container py-5">
+
+  <section class="calendar-section mb-5">
+    <h1 class="calendar-title text-center mb-4">Agenda de eventos UFMS</h1>
+
+    <div class="calendar-container mx-auto">
+      <div class="calendar-header d-flex justify-content-between align-items-center mb-3">
+        <button id="prev" aria-label="Mês anterior" class="btn btn-outline-primary">&lt;</button>
+        <h2 id="monthYear" class="m-0"></h2>
+        <button id="next" aria-label="Próximo mês" class="btn btn-outline-primary">&gt;</button>
+      </div>
+
+      <div class="calendar-weekdays d-grid" style="grid-template-columns: repeat(7, 1fr); text-align: center; font-weight: 700; color: #555;">
+        <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+      </div>
+
+      <div id="calendarDays" class="calendar-days mt-2"></div>
+    </div>
+  </section>
+
+    <section class="info-section">
+  <h1 class="info-main-title">Eventos já concluídos CPPP</h1>
+
+  <div class="cards-container">
+    <div class="card">
+      <svg width="50" height="50" fill="#0088b6" viewBox="0 0 16 16" class="card-icon">
+        <path d="M8 0a8 8 0 1 0 8 8A8 8 0 0 0 8 0Zm3.5 8.5a.5.5 0 0 1-.5.5H9v2a.5.5 0 0 1-1 0V9H5a.5.5 0 0 1 0-1h3V6a.5.5 0 0 1 1 0v2h2a.5.5 0 0 1 .5.5Z"/>
+      </svg>
+      <h3 class="card-title">Recepção de alouros</h3>
+      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet.</p>
+    </div>
+
+    <div class="card">
+      <svg width="50" height="50" fill="#0088b6" viewBox="0 0 16 16" class="card-icon">
+        <path d="M4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4Zm3 3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Zm4 8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7h7Z"/>
+      </svg>
+      <h3 class="card-title">Campanha de vacinação</h3>
+      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt.</p>
+    </div>
+
+    <div class="card">
+      <svg width="50" height="50" fill="#0088b6" viewBox="0 0 16 16" class="card-icon">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-7a3 3 0 1 0-3-3 3 3 0 0 0 3 3Z"/>
+      </svg>
+      <h3 class="card-title">Campeonato de xadrez</h3>
+      <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non nulla.</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+  <!-- Scripts JS -->
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
